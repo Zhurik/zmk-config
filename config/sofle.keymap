@@ -57,7 +57,7 @@
                          &trans           &trans  &trans  &trans  &trans             &trans  &trans                          &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&enc_scroll SCRL_UP SCRL_DOWN &enc_scroll SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&enc_scroll MOVE_Y(160) MOVE_Y(-160) &enc_scroll MOVE_X(160) MOVE_X(-160)>;
         };
 
         raise_layer {
