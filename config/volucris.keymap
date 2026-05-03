@@ -34,6 +34,8 @@
             label = "CAPS_TD";
             #binding-cells = <0>;
             bindings = <&none>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <250>;
         };
 
         shft_caps: shft_caps {
@@ -42,7 +44,7 @@
             bindings = <&kp>, <&caps_td>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
         };
     };
 
@@ -80,11 +82,11 @@
         raise_layer {
             display-name = "raise";
             bindings = <
-&kp GRAVE       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans    &trans    &trans     &kp MINUS         &kp EQUAL
-&trans          &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                        &trans  &trans    &kp UP    &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans          &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans
-&bt BT_CLR_ALL  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans  &trans  &trans  &trans    &trans    &trans     &trans            &trans
-                              &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans    &trans    &trans
+&kp GRAVE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans    &trans    &trans     &kp MINUS         &kp EQUAL
+&trans     &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                        &trans  &trans    &kp UP    &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans     &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans
+&trans     &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans  &trans  &trans  &trans    &trans    &trans     &trans            &trans
+                         &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&enc_scroll MOVE_Y(160) MOVE_Y(-160) &enc_scroll MOVE_X(160) MOVE_X(-160)>;
