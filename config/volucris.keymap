@@ -44,7 +44,7 @@
             >;
 
             sensor-bindings =
-                <&enc_scroll MOVE_Y(20) MOVE_Y(-20)>,
+                <&enc_scroll MOVE_Y(160) MOVE_Y(-160)>,
                 <&enc_scroll MOVE_Y(160) MOVE_Y(-160)>;
         };
 
