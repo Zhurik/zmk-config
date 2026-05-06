@@ -1,0 +1,19 @@
+# Copyright (c) 2026
+# SPDX-License-Identifier: MIT
+
+if SHIELD_VOLUCRIS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Volucris"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_VOLUCRIS_LEFT || SHIELD_VOLUCRIS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
